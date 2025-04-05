@@ -2,7 +2,7 @@
 
 A responsive web application for managing your movie watchlist, inspired by Netflix. Built with **SvelteKit** and **TailwindCSS**, and deployed on **Cloudflare Pages**.
 
-Live Demo: [Movies Watchlist]()
+Live Demo: [Movies Watchlist](https://movies-watchlist.pages.dev)
 
 ---
 
@@ -55,35 +55,41 @@ movies-watchlist/
 ## Installation
 
 1. **Clone the repository**:
-    ```bash
-    git clone https://github.com/your-username/movies-watchlist.git
-    cd movies-watchlist
-    ```
+
+   ```bash
+   git clone https://github.com/your-username/movies-watchlist.git
+   cd movies-watchlist
+   ```
 
 2. **Install dependencies**:
-    ```bash
-    pnpm install
-    ```
+
+   ```bash
+   pnpm install
+   ```
 
 3. **Start the development server**:
-    ```bash
-    pnpm dev
-    ```
+
+   ```bash
+   pnpm dev
+   ```
 
 4. **Open the app in your browser**:
-    ```
-    http://localhost:5173
-    ```
+   ```
+   http://localhost:5173
+   ```
 
 ---
 
 ## API Endpoints
 
 ### `GET /api/movies`
+
 Fetch all movies in the watchlist.
 
 ### `POST /api/movies`
+
 Add a new movie to the watchlist. Requires a JSON body with the following fields:
+
 - `title`
 - `director`
 - `releaseYear`
@@ -93,12 +99,15 @@ Add a new movie to the watchlist. Requires a JSON body with the following fields
 - `rating`
 
 ### `GET /api/movies/:id`
+
 Fetch a specific movie by its ID.
 
 ### `PUT /api/movies/:id`
+
 Update an existing movie. Requires a JSON body with updated fields.
 
 ### `DELETE /api/movies/:id`
+
 Delete a movie by its ID.
 
 ---
